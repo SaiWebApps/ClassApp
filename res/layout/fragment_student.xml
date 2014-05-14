@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hw3.partA.classapp.StudentActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp" />
+
+    <Button 
+        android:id="@+id/showStatsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="@string/show_stats_button"
+        android:layout_toRightOf="@id/header" />
+    
+    <TextView
+        android:id="@+id/err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:text=""
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/studentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/err"
+        android:hint="@string/student_id_hint" />
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentId"
+        android:hint="@string/score_hint" />
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentId"
+        android:layout_toRightOf="@id/q1"
+        android:hint="@string/score_hint" />
+
+    <EditText
+        android:id="@+id/q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1"
+        android:hint="@string/score_hint" />
+
+    <EditText
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1"
+        android:layout_toRightOf="@id/q3"
+        android:hint="@string/score_hint" />
+
+    <EditText
+        android:id="@+id/q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q3"
+        android:hint="@string/score_hint" />
+
+    <Button
+        android:id="@+id/createStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q3"
+        android:layout_toRightOf="@id/q5"
+        android:text="@string/create_button" />
+
+    <TableLayout
+        android:id="@+id/studentTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q5"
+        android:layout_marginTop="20sp"
+        android:stretchColumns="0,1,2,3,4,5,6,7" >
+    </TableLayout>
+
+</RelativeLayout>
